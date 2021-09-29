@@ -40,7 +40,7 @@ public class EnemyAttack : MonoBehaviour
     }
 
 
-    private void Update ()
+    private void Update()
     {
         timer += Time.deltaTime;
 
@@ -56,13 +56,13 @@ public class EnemyAttack : MonoBehaviour
     }
 
 
-    private void Attack ()
+    private void Attack()
     {
         timer = 0f;
 
         if (playerHealth.currentHealth > 0)
         {
-            playerHealth.TakeDamage (attackDamage);
+            playerHealth.TakeDamage(attackDamage);
         }
     }
 }
