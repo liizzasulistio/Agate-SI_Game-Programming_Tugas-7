@@ -12,6 +12,7 @@ public class EnemyManager : MonoBehaviour
     IFactory Factory { get { return factory as IFactory; } }
 
 
+
     private void Start()
     {
         //Executing spawn point
@@ -28,6 +29,8 @@ public class EnemyManager : MonoBehaviour
         //Get random value
         //int spawnPointIndex = Random.Range(0, spawnPoints.Length);
         int spawnEnemy = Random.Range(0, 3);
+
+        Debug.Log(spawnEnemy);
 
         //Duplicating enemies
         //Instantiate(enemy, spawnPoints[spawnPointIndex].position, spawnPoints[spawnPointIndex].rotation);

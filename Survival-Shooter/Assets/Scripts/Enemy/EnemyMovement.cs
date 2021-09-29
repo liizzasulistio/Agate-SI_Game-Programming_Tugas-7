@@ -1,15 +1,14 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.AI;
-using System.Collections;
 
 public class EnemyMovement : MonoBehaviour
 {
-
     Transform player;
     PlayerHealth playerHealth;
     EnemyHealth enemyHealth;
     NavMeshAgent nav;
-
 
     private void Awake()
     {
@@ -19,10 +18,9 @@ public class EnemyMovement : MonoBehaviour
         nav = GetComponent<NavMeshAgent>();
     }
 
-
     private void Update()
     {
-        if(/*enemyHealth.currentHealth > 0 && */playerHealth.currentHealth > 0)
+        if(/*enemyHealth.currentHealth > 0 &&*/ playerHealth.currentHealth > 0)
         {
             nav.SetDestination(player.position);
         }
