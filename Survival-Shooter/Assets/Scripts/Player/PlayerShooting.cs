@@ -16,7 +16,7 @@ public class PlayerShooting : MonoBehaviour
     Light gunLight;                                 
     float effectsDisplayTime = 0.2f;                
 
-    void Awake()
+    private void Awake()
     {
         shootableMask = LayerMask.GetMask("Shootable");
         gunParticles = GetComponent<ParticleSystem>();
@@ -25,7 +25,7 @@ public class PlayerShooting : MonoBehaviour
         gunLight = GetComponent<Light>();
     }
 
-    void Update()
+    private void Update()
     {
         timer += Time.deltaTime;
 
