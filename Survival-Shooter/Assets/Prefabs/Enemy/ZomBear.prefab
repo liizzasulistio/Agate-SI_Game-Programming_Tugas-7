@@ -18,9 +18,9 @@ GameObject:
   - component: {fileID: 2298498351464302398}
   - component: {fileID: 5427684342649849950}
   - component: {fileID: 2147649908259180454}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ZomBear
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -274,7 +274,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5159730234136096980}
   - component: {fileID: 9072399949817860030}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Zombear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -355,6 +355,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: ef39ae7291c751249b296f00bf6fb042, type: 3}
       propertyPath: m_Name
       value: HitParticles
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: ef39ae7291c751249b296f00bf6fb042, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ef39ae7291c751249b296f00bf6fb042, type: 3}
       propertyPath: m_LocalPosition.x
