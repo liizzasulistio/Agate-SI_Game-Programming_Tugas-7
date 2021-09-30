@@ -24,7 +24,7 @@ public class EnemyAttack : MonoBehaviour
 
     private void OnTriggerEnter (Collider other)
     {
-        if(other.gameObject == player && other.isTrigger == false)playerInRange = true;
+        if(other.gameObject == player && other.isTrigger == false) playerInRange = true;
     }
 
     private void OnTriggerExit (Collider other)

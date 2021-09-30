@@ -28,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
         Animating(h, v);
     }
 
-    private void Move(float h, float v)
+    public void Move(float h, float v)
     {
         movement.Set(h, 0f, v);
         movement = movement.normalized * speed * Time.deltaTime;
@@ -49,7 +49,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void Animating(float h, float v)
+    public void Animating(float h, float v)
     {
         bool walking = h != 0f || v != 0f;
         anim.SetBool("IsWalking", walking);
